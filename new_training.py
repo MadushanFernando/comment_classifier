@@ -1,11 +1,13 @@
 import pandas as pd
 import csv
+import pickle
 import ast
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 import numpy as np
 from sklearn.metrics import accuracy_score
 from joblib import dump, load
+
 train_data = []
 with open('vector_data.csv', 'r') as vector_data:
     reader = csv.DictReader(vector_data)
@@ -37,5 +39,8 @@ print("accuracy score : ", accuracy_score(y_test, y_pred))
 #         correct = correct + 1
 # accuracy = (correct / total) * 100
 # print('accuracy score is : ' + accuracy)
-dump(svclassifier, 'model.joblib')
-print("model saved")
+# dump(svclassifier, 'model.joblib')
+# print("model saved")
+filename = 'finished_model.sav'
+pickle.dump(svclassifier, open(filename, 'wb'))
+
