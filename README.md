@@ -39,6 +39,6 @@ To make it easier for debugging and to save time we devided the complete code in
   #### 3. new_training.py
     Creates the svm model using vectors in 'vector_data.csv' file as training data and saves the model in 'model.joblib' file and in 'finished_model.sav' file for later use.
     
-    [You can see the final model in action in this link](https://colab.research.google.com/drive/1gdTvkF6Za92XPZHbgyMpiTcg8nJe4MdQ?usp=sharing) 
+    You can see the final model in action in this link:(https://colab.research.google.com/drive/1gdTvkF6Za92XPZHbgyMpiTcg8nJe4MdQ?usp=sharing) 
   
 
